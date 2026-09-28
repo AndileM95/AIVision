@@ -1,0 +1,295 @@
+/* ============================================================
+   AIVision - Purple & Pink Theme
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #faf7ff;
+    color: #24152f;
+    line-height: 1.6;
+}
+
+/* ============================================================
+   NAVIGATION BAR
+   ============================================================ */
+
+.navbar {
+    background: linear-gradient(90deg, #5b21b6, #7c3aed, #db2777);
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(91, 33, 182, 0.25);
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffe4f2;
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background:
+        radial-gradient(circle at top left, #eadcff, transparent 40%),
+        radial-gradient(circle at bottom right, #ffd6eb, transparent 40%),
+        #faf7ff;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    max-width: 850px;
+    margin: auto;
+    color: #35105f;
+}
+
+.hero h1 span {
+    display: block;
+    background: linear-gradient(90deg, #7c3aed, #db2777);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #66566f;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 26px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #7c3aed, #db2777);
+    color: white;
+    box-shadow: 0 6px 18px rgba(124, 58, 237, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(219, 39, 119, 0.35);
+}
+
+.btn-secondary {
+    background: white;
+    color: #7c3aed;
+    border: 2px solid #c084fc;
+}
+
+.btn-secondary:hover {
+    background: #f3e8ff;
+    transform: translateY(-3px);
+}
+
+/* ============================================================
+   HERO STATISTICS
+   ============================================================ */
+
+.hero-stats {
+    max-width: 800px;
+    margin: 55px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(91, 33, 182, 0.12);
+    overflow: hidden;
+}
+
+.cell {
+    padding: 25px;
+    border-right: 1px solid #eadcff;
+}
+
+.cell:last-child {
+    border-right: none;
+}
+
+.value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #7c3aed;
+}
+
+.label {
+    color: #76627f;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* ============================================================
+   SECTION
+   ============================================================ */
+
+.section {
+    padding: 80px 7%;
+    background: white;
+}
+
+.section h2 {
+    text-align: center;
+    color: #35105f;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.section > p {
+    text-align: center;
+    color: #76627f;
+    margin-bottom: 45px;
+}
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+
+.grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: linear-gradient(145deg, #ffffff, #fcf5ff);
+    border: 1px solid #eadcff;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(91, 33, 182, 0.08);
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #7c3aed, #db2777);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(124, 58, 237, 0.18);
+}
+
+.num {
+    color: #db2777;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #5b21b6;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #6b5a73;
+}
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .cell {
+        border-right: none;
+        border-bottom: 1px solid #eadcff;
+    }
+
+    .cell:last-child {
+        border-bottom: none;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
