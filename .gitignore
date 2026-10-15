@@ -1,0 +1,10 @@
+venv/
+AiVision/venv/
+.env
+__pycache__/
+*.pyc
+AiVision/instance/
+instance/
+*.db
+*.sqlite3
+.vscode/
